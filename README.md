@@ -76,3 +76,8 @@ export default function VwPage() {
 import Cabecalho from '../../cabecalho'; // importacao relativa
 import Rodape from '@/app/rodape'; //importacao absoluta
 ```
+
+## Componentes
+- Criar pasta components na raiz do projeto
+- Cria os itens que quiser
+- Pega o valor que é passado para ele com `props.children`
