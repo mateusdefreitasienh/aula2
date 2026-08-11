@@ -38,3 +38,35 @@ export default function HomePage() {
   </div>
 }
 ```
+
+## Criando cabecalho e importando
+- Codigo cabecalho precisa ser exportado
+```ts
+export default function Cabecalho() {
+    return <header style={{
+        width: '100%',
+        height: '48px',
+        backgroundColor: 'white',
+        color: 'black',
+        padding: '16px'
+    }}>
+        Sou um cabeçalho
+    </header>
+}
+```
+
+- Usando cabecalho
+```ts
+import Link from 'next/link';
+import Cabecalho from '../cabecalho'
+
+export default function VwPage() {
+  return <div>
+    <Cabecalho/>
+    Mateus
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Volkswagen_logo.png" alt="" />
+    <Link href="vw/jetta">Pagina Jetta</Link>
+    <Link href="vw/golf">Pagina Golf</Link>
+  </div>
+}
+```
