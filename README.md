@@ -70,3 +70,9 @@ export default function VwPage() {
   </div>
 }
 ```
+
+## Importacao relativa e absoluta
+```ts
+import Cabecalho from '../../cabecalho'; // importacao relativa
+import Rodape from '@/app/rodape'; //importacao absoluta
+```

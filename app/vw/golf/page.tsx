@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Cabecalho from '../../cabecalho';
-import Rodape from '../../rodape'
+import Cabecalho from '../../cabecalho'; // importacao relativa
+import Rodape from '@/app/rodape'; //importacao absoluta
 
 export default function GolfPage() {
   return <div>

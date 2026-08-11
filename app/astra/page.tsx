@@ -1,5 +1,5 @@
 import Cabecalho from '../cabecalho'
-import Rodape from '../rodape'
+import Rodape from '@/app/rodape'
 
 export default function AstraPage() {
   return <div>

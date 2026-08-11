@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Cabecalho from '../cabecalho';
-import Rodape from '../rodape'
+import Rodape from '@/app/rodape';
 
 export default function VwPage() {
   return <div>
