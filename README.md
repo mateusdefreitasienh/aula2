@@ -81,3 +81,35 @@ import Rodape from '@/app/rodape'; //importacao absoluta
 - Criar pasta components na raiz do projeto
 - Cria os itens que quiser
 - Pega o valor que é passado para ele com `props.children`
+
+title.tsx
+```ts
+export default function Title(props) {
+    return <h1 style={{
+        color: props.cor,
+        fontSize: '20px'
+    }}>{props.children}</h1>
+}
+```
+
+
+page.tsx
+```ts
+import Link from 'next/link';
+import Cabecalho from './cabecalho';
+import Rodape from '@/app/rodape'
+import Title from '@/components/title';
+
+export default function HomePage() {
+  return <div>
+    <Cabecalho/>
+    <Title cor="red">Este é o titulo da home</Title>
+    Mateus
+    <br />
+    <Link href="/vw">Pagina VW</Link>
+    <br />
+    <Link href="/astra">Pagina Astra</Link>
+    <Rodape/>
+  </div>
+}
+```
